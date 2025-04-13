@@ -1,7 +1,13 @@
 import React from "react";
 import "./App.css";
-import yippee from './yippee.jpg'; // with import
-import {Button, Col, Container, Row} from "react-bootstrap";
+import { ChangeType } from "./components/ChangeType";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { TwoDice } from "./components/TwoDice";
+import { Counter } from "./components/Counter";
+import { StartAttempt } from "./components/StartAttempt";
+import { CycleHoliday } from "./components/CycleHoliday";
+
+
 
 function App(): React.JSX.Element {
     return (
@@ -9,49 +15,18 @@ function App(): React.JSX.Element {
             <header className="App-header">
                 UM COS420 with React Hooks and TypeScript heading
             </header>
-            <h1>This is a heading</h1>
-            <p>
-                Edit <code>src/App.tsx</code> and save. This page will
-                automatically reload. Matthew Frizzle Hello World
-            </p>
-            <img src={yippee} alt="A picture of a poorly drawn cat" />
-            Ordered list:
-            <ol>
-                <li>Making</li>
-                <li>A</li>
-                <li>List</li>
-            </ol>
-            <Button
-                onClick={() => {
-                    console.log("Hello World!");
-                }}
-            >
-                Log Hello World
-            </Button>
-            <div>
-                <Container>
-                    <Row>
-                        <Col>
-                            <div
-                                style={{
-                                    width: 100,
-                                    height: 100,
-                                    backgroundColor: "red",
-                                }}
-                            ></div>
-                        </Col>
-                        <Col>
-                            <div
-                                style={{
-                                    width: 100,
-                                    height: 100,
-                                    backgroundColor: "red",
-                                }}
-                            ></div>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+            <hr />
+            <Counter></Counter>
+            <hr />
+            <RevealAnswer></RevealAnswer>
+            <hr />
+            <TwoDice></TwoDice>
+            <hr />
+            <ChangeType></ChangeType>
+            <hr />
+            <StartAttempt></StartAttempt>
+            <hr />
+            <CycleHoliday></CycleHoliday>
         </div>
     );
 }
