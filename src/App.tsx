@@ -7,11 +7,13 @@ import { Counter } from "./components/Counter";
 import { StartAttempt } from "./components/StartAttempt";
 import { CycleHoliday } from "./components/CycleHoliday";
 
+
+
 function App(): React.JSX.Element {
     return (
         <div className="App">
             <header className="App-header">
-                UM COS420 with React Hooks and TypeScript
+                UM COS420 with React Hooks and TypeScript heading
             </header>
             <hr />
             <Counter></Counter>
